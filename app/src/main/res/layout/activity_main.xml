@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/saveValueTittle"
+            android:text="Save Value"
+            android:textColor="@color/black"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveValueTittle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <Button
+            android:backgroundTint="#2E0C01"
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/value"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="save Value" />
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            app:dividerColor="@color/black"
+            android:id="@+id/divider" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/divider"
+            android:id="@+id/fetchValueTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch Value" />
+
+        <TextView
+            android:layout_below="@+id/fetchValueTittle"
+            android:id="@+id/fetchedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+        <Button
+            android:backgroundTint="#034C06"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fetchedValue"
+            android:id="@+id/getValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get Value" />
+
+
+    </RelativeLayout>
+</layout>
